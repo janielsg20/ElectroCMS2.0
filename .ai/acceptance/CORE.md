@@ -1,0 +1,12 @@
+# CORE ACCEPTANCE
+- [ ] Project create/open/save/reopen/offline.
+- [ ] Puck edit/nesting/history.
+- [ ] Responsive/platform overrides.
+- [ ] Content schema/records/relations.
+- [ ] Query/filter/listing.
+- [ ] Forms.
+- [ ] Backend.
+- [ ] Roles.
+- [ ] Media/Tiptap.
+- [ ] Zustand state.
+- [ ] Rete actions.

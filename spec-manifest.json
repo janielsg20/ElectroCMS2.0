@@ -1,0 +1,46 @@
+{
+  "project": "ElectroCMS 2.0",
+  "revision": "fifth-final-master-spec",
+  "date": "2026-08-14",
+  "phases": 28,
+  "microphases": 218,
+  "status": "final architecture/spec audit passed",
+  "architecture": {
+    "visual_editor": "Puck Composition + Slots",
+    "studio_db": "PGlite multi-tab Worker + Drizzle / idb baseline",
+    "runtime_cache": "TanStack Query",
+    "admin": "Refine Core + TanStack Table",
+    "forms": "ElectroDocument kind=form + RHF + Zod",
+    "queries": "RQB payload + Diagnostics + fail-closed target adapters",
+    "workflow": "Rete engine/history",
+    "richtext": "Tiptap editor + Static Renderer",
+    "state": "Zustand + validated hydration",
+    "native": "React Native + Expo + Expo Router + Expo SQLite",
+    "chart_web": "Apache ECharts",
+    "chart_native": "Victory Native conditional",
+    "calendar_web": "FullCalendar Standard",
+    "calendar_native": "react-native-calendars",
+    "kanban_web": "dnd-kit",
+    "icons": "Lucide semantic adapter"
+  },
+  "exports": [
+    "Local",
+    "Static",
+    "React",
+    "PWA",
+    "Android",
+    "iOS",
+    "Capacitor",
+    "LAMP",
+    "WordPress"
+  ],
+  "post_core": [
+    "AI/Puck AI provider",
+    "Yjs collaboration",
+    "XState statecharts",
+    "GraphQL-specific provider",
+    "custom-code sandbox",
+    "public plugin SDK",
+    "desktop wrappers"
+  ]
+}

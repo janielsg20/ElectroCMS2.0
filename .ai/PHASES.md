@@ -1,0 +1,58 @@
+# PHASES — Fifth Final
+
+- **F00 — Auditoría funcional, OSS ownership y POCs**
+  - Probar con APIs oficiales que los engines elegidos cubren sus responsabilidades y congelar ADRs.
+- **F01 — Monorepo, boundaries, documentación y CI**
+  - Crear límites de paquetes, tooling, documentación/evidence y CI.
+- **F02 — Modelo canónico mínimo, ownership y versionado**
+  - Definir project objects/wrappers mínimos sin árboles, ASTs o registries duplicados.
+- **F03 — Design System, AppShell, Studio Appearance e Information Architecture**
+  - Construir AppShell, Design System, Studio Appearance, Palette e IA progresiva.
+- **F04 — PGlite Worker, persistencia incremental y Project Lifecycle**
+  - Implementar persistencia local multi-tab, incremental, recuperable y Project Manager.
+- **F05 — Puck Visual Editor Core**
+  - Integrar Puck mediante Composition/Slots sin segundo editor engine.
+- **F06 — Editor avanzado, responsive y portabilidad visual**
+  - Añadir responsive/advanced editing únicamente donde Electro aporta valor.
+- **F07 — Themes, Templates, Blocks y Global Components**
+  - Resolver diseño/reutilización con Theme, Template Documents, Blocks y Globals.
+- **F08 — CMS Schema, Content Store, Workflow e Indexer**
+  - Implementar CMS, workflow/revisions/options/profiles/indexer sin DDL dinámico.
+- **F09 — Bindings, Queries, Listings, Facets y Runtime Cache**
+  - Resolver dynamic data con Binding, RQB Diagnostics, TanStack Query y facets.
+- **F10 — Media Library y Tiptap Rich Text**
+  - Gestionar media local y Tiptap con Static Renderer read-only.
+- **F11 — Runtime State con Zustand**
+  - Implementar Zustand state y persistencia validada.
+- **F12 — Auth, Users, Roles, Permissions y Audit**
+  - Implementar Auth, Users, Profiles, Permissions y Audit.
+- **F13 — Action Flow, Automation y API Providers con Rete**
+  - Implementar Rete actions/automation/providers sin runtime paralelo.
+- **F14 — Forms Builder con RHF/Zod**
+  - Construir Form Documents sobre RHF/Zod y ActionGraph.
+- **F15 — Backend Builder, CSV Data Exchange, Refine y TanStack**
+  - Construir Backend con Refine/TanStack, adapters Chart/Calendar/Kanban y CSV data exchange.
+- **F16 — Blueprint Engine, Project Kits y Professional Capability Matrix**
+  - Entregar Project Kits/20 Blueprints y cerrar matriz profesional.
+- **F17 — Preview, Debug y Runtime Diagnostics**
+  - Preview runtime separado y Debug/trace.
+- **F18 — Platform Capability Registry y Compatibility Analyzer**
+  - Compatibilidad multi-target y no silent loss.
+- **F19 — React Native Renderer**
+  - React Native renderer sin DOM.
+- **F20 — Expo Runtime, Router, Native Data y Native Admin**
+  - Expo runtime/router/SQLite/Native admin con Refine headless.
+- **F21 — Native Device Capabilities**
+  - Device capabilities solo cuando se usan.
+- **F22 — ElectroExportIR, Local/React/Static/PWA y Dependency Pruning**
+  - Local/React/Static/PWA con ExportIR, professionalStudio y dependency pruning.
+- **F23 — Android/iOS Export y Capacitor Fallback**
+  - Android/iOS y Capacitor fallback explícito.
+- **F24 — LAMP Exporter**
+  - LAMP funcional/seguro.
+- **F25 — WordPress Theme + Companion Plugin Exporter**
+  - WordPress Theme+Plugin funcional/seguro.
+- **F26 — Hardening, OSS Stability, Deploy Boundaries y Post-Core Guardrails**
+  - Hardening, dependency stability/licensing y post-core boundaries.
+- **F27 — Cross-Target QA, Editable Store Fixture, Coverage y Release**
+  - Cross-target same-state proof, coverage audit y release gate.

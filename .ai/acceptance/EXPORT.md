@@ -1,0 +1,11 @@
+# EXPORT ACCEPTANCE
+- [ ] Local reimport.
+- [ ] React build.
+- [ ] Static behavior.
+- [ ] PWA offline.
+- [ ] Android source/build where available.
+- [ ] iOS source/build where available.
+- [ ] Capacitor fallback.
+- [ ] LAMP install.
+- [ ] WordPress theme+plugin install.
+- [ ] no silent loss.
