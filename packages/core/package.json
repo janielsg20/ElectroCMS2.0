@@ -18,6 +18,9 @@
     "@electric-sql/pglite": "^0.5.5",
     "@react-querybuilder/core": "^8.23.0",
     "drizzle-orm": "^0.45.2",
-    "react-querybuilder": "^8.23.0"
+    "react-querybuilder": "^8.23.0",
+    "rete": "^2.0.6",
+    "rete-engine": "^2.1.1",
+    "rete-history-plugin": "^2.2.0"
   }
 }
