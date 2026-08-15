@@ -3,7 +3,8 @@
   "private": true,
   "description": "ElectroCMS 2.0 Monorepo",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/experiments/native-poc"
   ],
   "scripts": {
     "dev": "npm run dev --workspaces --if-present",

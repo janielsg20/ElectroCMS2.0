@@ -6,18 +6,18 @@ Date: 2026-08-14
 F00 — Auditoría funcional, OSS ownership y POCs
 
 ## Active microphase
-M00.5 — POC Query portable
+M00.7 — POC Native runtime
 
 ## State
 EN_CURSO
 
-## Evidence for M00.4
-- Generic DB schema implemented with Drizzle (projects, objects, records, index).
-- PGlite initialized with multi-tab consistency capability.
-- Incremental save validated via MD5 checksums.
-- Generic content store validated (no physical DDL for logical fields).
-- Field indexing for facets validated with 100% test coverage.
-- CI/CD environment fixed to support ESM/PGlite tests.
+## Evidence for M00.6
+- Portable ElectroActionGraph model defined.
+- Rete adapter implemented for bidirectional mapping.
+- Isolation verified (no Rete runtime classes in canonical model).
+- Logic execution POC validated with Rete engine.
+- Undo/Redo capability confirmed via Rete history plugin.
+- Unit tests passed for mapping and isolation.
 
 ## Rule
 Only one microphase `EN_CURSO`.
