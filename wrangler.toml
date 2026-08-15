@@ -1,0 +1,6 @@
+name = "electrocms-studio"
+pages_build_output_dir = "packages/studio/dist"
+
+[[pages_build_config]]
+build_command = "npm run build --workspace=packages/studio"
+publish_dir = "packages/studio/dist"

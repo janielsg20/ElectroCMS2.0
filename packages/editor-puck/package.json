@@ -1,0 +1,19 @@
+{
+  "name": "@electrocms/editor-puck",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@electrocms/core": "*",
+    "@puckeditor/core": "^0.23.0"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5"
+  }
+}

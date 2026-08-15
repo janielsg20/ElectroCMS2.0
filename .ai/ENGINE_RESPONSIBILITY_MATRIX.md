@@ -4,15 +4,15 @@
 
 ## Delegate
 - visual drag/drop;
-- nested `slot` fields;
+- nested `slot` fields (v0.19+ standard);
 - Components/Drawer;
 - Outline;
 - Fields;
 - Preview;
-- editor permissions;
-- inline text;
+- editor permissions via `resolvePermissions`;
+- inline text editing (`contentEditable: true`);
 - RichText/Tiptap integration;
-- session visual history;
+- session visual history via `usePuck` / `initialHistory`;
 - viewport frame configuration;
 - onAction/action lifecycle used by the adapter.
 
@@ -44,12 +44,13 @@ Puck AI is post-core/optional while it requires a cloud/account/API key.
 # PGlite + Drizzle
 
 ## Delegate
-- embedded PostgreSQL;
-- IndexedDB-backed persistent DB;
+- embedded PostgreSQL (WASM);
+- IndexedDB-backed persistent DB (`idb://`);
 - transactions;
 - stable physical schema migrations;
 - SQL execution;
-- typed access.
+- typed access via Drizzle.
+- **Multi-tab coordination** via Leader Election in Worker.
 
 ## ElectroCMS adds
 - official multi-tab Worker integration;
@@ -74,7 +75,7 @@ Media bytes use MediaBlobStorePort: OPFS preferred with IndexedDB Blob fallback.
 # TanStack Query
 
 Owns:
-- async query lifecycle;
+- async query lifecycle (stale-while-revalidate);
 - cache;
 - loading/error;
 - retry/refetch/invalidation.
@@ -97,10 +98,10 @@ Owns:
 - useTable;
 - form/admin orchestration;
 - TanStack Query integration;
-- access-control provider surface;
+- access-control provider surface (`accessControlProvider`);
 - NotificationProvider;
 - AuditLogProvider;
-- CSV useImport/useExport.
+- CSV exchange via `useImport` and `useExport`.
 
 ElectroCMS owns:
 - AdminScreen/backend document metadata;
@@ -135,7 +136,7 @@ RHF owns:
 form values, dirty/touched, arrays, submit lifecycle.
 
 Zod owns:
-runtime validation at boundaries.
+runtime validation at boundaries (Studio and generated output).
 
 ElectroCMS owns:
 Form Document metadata, Field aliases, generated schema mapping and submit ActionGraph.
@@ -149,7 +150,7 @@ No second form state engine.
 Owns:
 - rule/group editing;
 - combinators/operators;
-- Diagnostics format;
+- Diagnostics format (`formatQuery(query, 'diagnostics')`);
 - formatter/processors;
 - parameterized SQL/Drizzle output when compatible.
 
@@ -172,7 +173,7 @@ Owns:
 - graph canvas;
 - sockets/connections;
 - Dataflow/ControlFlow engine in JS runtimes;
-- History Plugin.
+- History Plugin for Undo/Redo.
 
 ElectroCMS owns:
 - semantic node catalog;
@@ -190,7 +191,7 @@ No second JS workflow runtime/history.
 Owns:
 - richtext editor/document JSON;
 - editing/history/extensions;
-- Static Renderer for HTML/React/other mappings.
+- Static Renderer (`@tiptap/static-renderer`) for HTML/React/other mappings.
 
 ElectroCMS owns:
 - allowed extension profile;
@@ -224,13 +225,13 @@ XState is post-core unless a concrete statechart requirement appears.
 # Expo / React Native / Expo Router
 
 Own:
-native runtime, routing, Stack/standard JS Tabs and module ecosystem.
+native runtime, routing (Expo Router), Stack/standard JS Tabs and module ecosystem.
 
 ElectroCMS adds:
 route compiler, renderers, permission/capability mapping, export configuration.
 
 Default to stable APIs.
-Experimental navigation never becomes release-critical without fallback.
+Experimental navigation (Native Tabs) never becomes release-critical without fallback.
 
 ---
 

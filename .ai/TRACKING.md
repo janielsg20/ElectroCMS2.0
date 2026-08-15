@@ -6,18 +6,17 @@ Date: 2026-08-14
 F00 — Auditoría funcional, OSS ownership y POCs
 
 ## Active microphase
-M00.1 — Trazar Prompt Maestro 1.0 al plan 2.0
+M00.3 — POC Visual Editor con Puck Composition
 
 ## State
-NO_INICIADA
+EN_CURSO
 
-## Required evidence before M00.1 completes
-- atomic requirement inventory;
-- owner phase/microphase;
-- engine owner;
-- target coverage;
-- rationalization type when a visible widget becomes preset/composite/binding/alias;
-- no requirement without owner.
+## Evidence for M00.2
+- ADR_001 created documenting Puck, PGlite, Refine, RQB, Rete, Expo boundaries.
+- ENGINE_RESPONSIBILITY_MATRIX.md updated with exact v216 requirements.
+- ElectroAuthProvider (Local) and PermissionEvaluator adapters implemented.
+- Unit tests passed for Auth/Permissions (5 tests passed).
+- Test environment initialized (Jest + TypeScript).
 
 ## Rule
 Only one microphase `EN_CURSO`.
