@@ -6,18 +6,22 @@ Date: 2026-08-14
 F00 — Auditoría funcional, OSS ownership y POCs
 
 ## Active microphase
-M00.7 — POC Native runtime
+F01 entrance gate — Monorepo scaffolding
 
 ## State
-EN_CURSO
+F00_COMPLETADA
 
-## Evidence for M00.6
-- Portable ElectroActionGraph model defined.
-- Rete adapter implemented for bidirectional mapping.
-- Isolation verified (no Rete runtime classes in canonical model).
-- Logic execution POC validated with Rete engine.
-- Undo/Redo capability confirmed via Rete history plugin.
-- Unit tests passed for mapping and isolation.
+## Evidence for Phase F00
+- **M00.1**: 57 atomic requirements mapped in TRACEABILITY_MATRIX.md.
+- **M00.2**: OSS boundaries defined and Auth/Permission adapters implemented.
+- **M00.3**: Puck POC validated bidirectional mapping and Slots.
+- **M00.4**: PGlite POC validated incremental save and No-DDL schema.
+- **M00.5**: RQB POC validated fail-closed safety and hybrid SQL.
+- **M00.6**: Rete POC validated portable graph isolation and history.
+- **M00.7**: Native POC validated RN primitive mapping and Expo SQLite.
+- **M00.8**: Architectural ADRs closed and DECISIONS.md finalized.
+- **CI/CD**: Workspace configured with GitHub Actions and Cloudflare Pages deploy.
+- **Tests**: 18 tests passed across core and editor packages.
 
 ## Rule
 Only one microphase `EN_CURSO`.
