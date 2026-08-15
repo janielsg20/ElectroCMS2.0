@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "npm run dev --workspaces --if-present",
     "build": "npm run build --workspaces --if-present",
-    "test": "jest --config jest.config.js",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest --config jest.config.js",
     "lint": "npm run lint --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "ci": "npm run lint && npm run typecheck && npm run test"

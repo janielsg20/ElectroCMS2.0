@@ -10,6 +10,12 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@types/pg": "^8.21.0",
+    "drizzle-kit": "^0.31.10",
     "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.5",
+    "drizzle-orm": "^0.45.2"
   }
 }
